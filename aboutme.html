@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+</head>
+<body>
+  <h1>About Me</h1>
+  
+  <ul>
+    <li>Nickname: <span id="nickname"></span>
+    <li>Favorites:  <span id="favorites"></span>
+    <li>Hometown: <span id="hometown"></span>
+   </ul>
+  
+ </body>
+</html>
+<script lang="javascript">
+  document.body.style.fontFamily = 'Arial, san-serif'
+  document.querySelector('#nickname').innerHTML = 'Le Chi Ron'
+  document.querySelector('#favorites').innerHTML = 'Programming'
+  document.querySelector('#hometown').innerHTML = 'Quang Tri'
+  document.querySelectorAll('li').forEach(element => element.classList.add('listitem'))
+  document.querySelectorAll('.listitem').forEach(element => element.style.color = 'red')
+  var avatar = document.createElement('img')
+  avatar.setAttribute('src', 'https://br.atsit.in/vi/wp-content/uploads/2021/11/hay-tin-dieu-do-mot-cong-tac-fortnite-x-naruto-chinh-thuc-dien-ra.jpg')
+  document.body.appendChild(avatar)
+</script>
