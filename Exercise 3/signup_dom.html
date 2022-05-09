@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="signup_dom.css">
+    <script src="/Exercise 3/signup_dom.js"></script>
+  </head>
+  <body>
+    <form name="signupform" style="border:1px solid #ccc">
+      <h1>Sign Up Page</h1>
+      <div class="container">
+        <p class="invalid-alert hidden">Email address empty or wrong format, example: username@somewhere.sth</p>
+        <label for="email"><b>Email</b></label>
+        <input type="text" name="email" required>
+
+        <p class="invalid-alert hidden">Please enter the correct format for Username. (No leading or trailing spaces)</p>
+        <label for="username"><b>Username</b></label>
+        <input type="text" name="username" required>
+
+        <p class="invalid-alert hidden">Plese enter the correct format for password. (8 characters at least one non-letter)</p>  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" name="password" required>
+
+        <p class="invalid-alert hidden">Make sure password and confirm passwords match</p> 
+        <label for="psw-repeat"><b>Confirm Password</b></label>
+        <input type="password" name="confirm" required>
+      </div>
+      <button type="submit" class="signupbtn" onclick="formValidation(); return false">Sign Up</button>
+      <button type="button" class="resetbtn">Reset</button>
+      <div id="information"></div>
+    </form>
+  </body>
+</html>
